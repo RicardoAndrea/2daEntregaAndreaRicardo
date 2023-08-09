@@ -7,16 +7,9 @@ const productos = [
   { id: 6, nombre: "notebook", precio: 400000 },
 ];
 
-let nombre = prompt("Ingrese el nombre del producto a consultar");
+let nombre = prompt("Ingrese el nombre del electrodomestico que desee consultar su precio: televisor, celular, reloj, tablet, pc, notebook");
 let producto = productos.find((item) => item.nombre === nombre);
 let formasDePago = prompt ("ingrese formas de pago efvo, credito");
-// const valoresConCredito = productos.map((item) => {
-//   return {
-//     id: item.id,
-//     nombre: item.nombre,
-//     precio: item.precio - item.precio * 0.21,
-//   };
-// });
 if (formasDePago === "efvo"){
     if (producto) {
         let mensaje = `
@@ -45,21 +38,3 @@ if (formasDePago === "efvo"){
 }
 }
 alert ("recargue la página para otra consulta");
-
-
-
-
-
-
-// const precios = productos.map((item) => item.precio);
-// console.log(precios);
-
-// const nuevosPrecios = productos.map((item) => {
-//   return {
-//     id: item.id,
-//     nombre: item.nombre,
-//     precio: item.precio - item.precio * 0.21,
-//   };
-// });
-
-// console.log(nuevosPrecios);
